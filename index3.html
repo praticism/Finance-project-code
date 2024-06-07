@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-bar {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .menu-item {
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background-color: #575757;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+        }
+
+        .menu.show {
+            display: flex;
+        }
+
+        @media (max-width: 600px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .menu-bar {
+                display: none;
+            }
+
+            .menu.show+.menu-bar {
+                display: flex;
+                flex-direction: column;
+                background-color: #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar">gg</div>
+        <div class="bar">ggg</div>
+        <div class="bar">ggggg</div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-item" onclick="menuClick('Home')">Home</div>
+        <div class="menu-item" onclick="menuClick('About')">About</div>
+        <div class="menu-item" onclick="menuClick('Contact')">Contact</div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+
+        function menuClick(item) {
+            alert('You clicked ' + item);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body style="background-image: url('./assets/images/education.jpg')">
+    <!-- Navbar -->
+    <section class="m-8">
+
+        <div
+            class="flex flex-row max-[300px]:hidden justify-between items-center bg-transparent py-4 px-4 rounded-3xl backdrop-blur-2xl">
+            <img class="cursor-pointer" src="./assets/images/Logo.svg" alt="">
+            <div class=" sm:space-x-8">
+                <a class="sm:text-sm max-w-4xl
+                transition hover:underline cursor-pointer  hover:text-sm duration-400" href="#">Home</a>
+                <a class="sm:text-sm max-w-4xl transition hover:underline cursor-pointer hover:text-sm duration-400"
+                    href="#">About Us</a>
+                <a class="sm:text-sm max-w-4xl transition hover:underline cursor-pointer hover:text-sm duration-400"
+                    href="#">Contact</a>
+                <a class="sm:text-sm max-w-4xl transition hover:underline cursor-pointer hover:text-sm duration-400"
+                    href="#">Shop</a>
+                <a class="sm:text-sm max-w-4xl transition hover:scale-110 hover:underline cursor-pointer hover:text-sm duration-400"
+                    href="#">Payments</a>
+            </div>
+            <button
+                class="sm:text-sm max-w-4xl sm:hover:text-sm transition bg-[#189877] drop-shadow-2xl focus:text-md animate-pulse focus:text-gray-400 focus:bg-amber-600 rounded-xl py-2 px-6 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:text-xl duration-300  text-white">Get
+                Started</button>
+        </div>
+        <div class="max-[300px]:hidden flex pt-6 items-center justify-center">
+            <div class="flex w-96 bg-gray-300 rounded-2xl">
+                <input type="search" name="search" id="search"
+                    class="w-full border-none rounded-l-2xl bg-[#bac4c1] px-4 py-1 text-gray-900 outline-none">
+                <button
+                    class="m-2 rounded bg-teal-800 px-4 py-2 hover:bg-teal-400 focus:outline-1 focus:hover:bg-teal-500 text-white">Search</button>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Menu -->
+    <section class="flex justify-between m-8">
+        <img class=" size-8   min-[300px]:hidden" src="./assets/images/Logo.svg" alt="">
+        <div class="min-[300px]:hidden flex pt-6 items-center justify-center">
+            <div class="flex bg-gray-300 rounded-2xl">
+                <input type="search" name="search" id="search"
+                    class="w-full border-none rounded-l-2xl bg-[#babfc4] px-4 py-1 text-gray-900 outline-none">
+                <button
+                    class="m-1 rounded bg-teal-800 size-8 text-[10px] px-2 py-1 hover:bg-teal-400 focus:outline-1 focus:hover:bg-teal-500 text-white">Search</button>
+            </div>
+        </div>
+        <img id="demo" class="size-8 min-[300px]:hidden cursor-pointer" src="./assets/images/menu.png"
+            onclick="myfunction()" alt="">
+    </section>
+
+
+    <section class="m-10 backdrop-blur-xl mt-40">
+        <div
+            class=" *:text-white min-h-10 sm:grid sm:grid-cols-2 grid-cols-1 gap-4 bg-transparent py-4 px-4 rounded-3xl backdrop-blur-2xl">
+            <div
+                class="transition py-4 px-4 backdrop-blur-2xl  rounded-2xl hover:scale-110 delay-200 hover:bg-[#FFFFF] duration-300  bg-indigo-600">
+                <h1 class="text-lg">Web Development</h1>
+                <p class="">Web development is the work involved in developing a website for the Internet
+                    (World Wide Web) or an
+                    intranet (a private network). Web development can range from developing a simple single static page
+                    of plain text to complex web applications, electronic businesses, and social network services.
+                </p>
+            </div>
+            <div class="py-4 px-4 transition backdrop-blur-2xl hover:scale-110  delay-200 rounded-2xl bg-indigo-600">
+                <h1 class="text-lg">App development</h1>
+                <p>Mobile app development is the act or process by which a mobile app is developed for one or more
+                    mobile devices, which can include personal digital assistants (PDA), enterprise digital assistants
+                    (EDA), or mobile phones.
+                </p>
+            </div>
+            <div class="py-4 px-4 backdrop-blur-2xl hover:scale-110   bg-indigo-600 rounded-2xl">
+                <h1 class="text-lg">Hacking</h1>
+                <p>What is hacking? Hacking (also called cyber hacking) is the use of unconventional or illicit means to
+                    gain unauthorized access to a digital device, computer system or computer network.
+                </p>
+            </div>
+            <div class="py-4 px-4 backdrop-blur-2xl hover:scale-110  rounded-2xl bg-indigo-600">
+
+                <h1 class="text-lg">Designing</h1>
+                <p>A designer plays a key role in a creative company. Using elements like typography, illustration,
+                    photography and layouts, a designer always has an extremely creative mind that can absorb visual
+                    trends and deploy them in fresh and exciting ways.
+                </p>
+            </div>
+            <div class="py-4 px-4 backdrop-blur-2xl hover:scale-110  rounded-2xl bg-indigo-600">
+                <h1 class="text-lg">Games Development</h1>
+                <p>Video game development (sometimes shortened to gamedev) is the process of creating a video game. It
+                    is a multidisciplinary practice, involving programming, design, art, audio, user interface, and
+                    writing.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About us -->
+    <section class="m-8 max-[300px]:hidden">
+
+        <div>
+            <span class="py-2 px-4 text-[#189877] hover:bg-indigo-400 hover:text-lg  rounded-2xl bg-[#E8F5F1]">About
+                us</span>
+            <div class="mt-6">
+                <p class="font-semibold tracking-normal w-[350px]"> Welcome to Mpay, where innovation meets seamless
+                    global
+                    commerce. As pioneers
+                    in the online business sphere, we are dedicated to empowering entrepreneurs with cutting-edge
+                    solutions.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- For moblie  -->
+
+    <section class="min-[300px]:hidden">
+
+        <div>
+            <span class="py-2 px-4 text-[#189877] hover:bg-indigo-400 hover:text-lg  rounded-2xl bg-[#E8F5F1]">About
+                us</span>
+            <div class="mt-2">
+                <p class="font-semibold tracking-normal w-[350px] hover:text-white hover:text-lg">
+                    Welcome
+                    to Mpay, where innovation meets seamless
+                    global
+                    commerce. As pioneers
+                    in the online business sphere, we are dedicated to empowering entrepreneurs with cutting-edge
+                    solutions.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function myfunction() {
+            const element = document.getElementsByTagName('section');
+
+            document.getElementById("demo").innerHTML = 'element[0].innerHTML';
+        }
+    </script>
+</body>
+
+
+</html>
