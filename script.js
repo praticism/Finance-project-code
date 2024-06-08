@@ -1,18 +1,33 @@
-const moonImage = './assets/images/moon.png';
-const sunImage = './assets/images/sun.png';
-
-function changeBackground() {
-const body = $('#first');
-const toggleImage = $('#toggleBackground');
-
-body.toggleClass('dark:bg-slate-800');
-
-    if (body.hasClass('dark:bg-slate-800')) {
-        toggleImage.attr('src', sunImage);
-    } else {
-        toggleImage.attr('src', moonImage);
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+function addTask(){
+    if(inputBox.value === ''){
+        alert("You must write something!");
     }
+    else{
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        li.appendChild(span)
+    }
+    inputBox.value = "";
+    saveData();
 }
-$(document).ready(function() {
-    $('#toggleBackground').on('click', changeBackground);
-});
+
+listContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("checked");
+    }
+    else if(e.target.tagName === "SPAN"){
+         e.target.parentElement.remove();
+    }
+},   false);
+
+
+function saveData(){
+    localStorage.setItem("data", listContainer.innerHTMl);
+}
+
+
