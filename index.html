@@ -4,27 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>N!t9nore</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body>
-    <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List <img src="./assets/images/icon.png" alt=""></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addTask()">Add</button>
+<body class="m-0 p-0 font-sans">
+    <section class="w-full h-screen bg-cover bg-center" style="background-image: url('/assets/images/background.jpg');">
+        <div class="px-6 pt-4">
+            <div class="px-2 navbar m-auto w-[85%] pt-2 flex justify-between items-center">
+                <img class="w-[120px] cursor-pointer" src="./assets/images/logoname.png" alt="">
+                <ul class="flex gap-6 *:uppercase">
+                    <li><a class="text-[#fff]" href="#">Home</a></li>
+                    <li><a class="text-[#fff]" href="#">Bedroom</a></li>
+                    <li><a class="text-[#fff]" href="#">Dining</a></li>
+                    <li><a class="text-[#fff]" href="#">Kitchen</a></li>
+                    <li><a class="text-[#fff]" href="#">Backyard</a></li>
+
+                </ul>
             </div>
-            <ul id="list-container">
-                <!-- <li class="checked">Task 1</li>
-                <li class="checked">Task 2</li>
-                <li class="checked">Task 3</li> -->
-            </ul>
+            <div class="content">
+                <h1 class="text-6xl font-semibold mt-16">DESIGN YOUR HOUSE</h1>
+                <p class="leading-6 tracking-tighter mt-4">Subscribe Easy Tutorials YouTube Channel to watch more
+                    videos,
+                    <br>
+                    press the bell icon
+                    to
+                    get
+                    latest
+                    updates.
+                </p>
+                <div class="mt-8 space-x-4">
+                    <button
+                        class="bg-slate-400  rounded-3xl py-2 px-12 font-bold border-[2px] bg-transparent cursor-pointer text-[#fff] border-[#009688]"
+                        type="button"><span class="z-[-1]"></span>WATCH MORE</button>
+                    <button
+                        class="bg-slate-400 rounded-3xl py-2 px-12 font-bold border-[2px] bg-transparent cursor-pointer text-[#fff] border-[#009688]"
+                        type="button"><span class="z-[-1]"></span>SUBSCRIBE</button>
+
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
 
 </body>
 
